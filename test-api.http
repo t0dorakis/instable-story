@@ -55,11 +55,20 @@ content-type: application/json
 
 ### Digital Ocean droplet
 
-GET http://api.theodorhillmann.de:3000/.netlify/functions/server/create-image
+GET https://api.theodorhillmann.de/create-image
 content-type: application/json
 
 {
     "prompt": "A cute cat eating pizza",
     "pixel": 256,
     "number": 1
+}
+
+###
+POST https://api.theodorhillmann.de/story-board-script
+content-type: application/json
+
+{
+    "prompt": "Write a screenplay about a sowjet city in the 70s which get invaded by dinosaurs.",
+    "mock": false
 }

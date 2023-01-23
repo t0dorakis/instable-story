@@ -2,6 +2,9 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
+const fs = require("fs");
+const http = require("http");
+const https = require("https");
 const serverless = require("serverless-http");
 const { generateImage, generateText } = require("./services/mw-open-ai");
 const {
@@ -12,6 +15,26 @@ const { generateScript } = require("./services/generateStoryBoardScript");
 const app = express();
 const router = express.Router();
 
+// Certificate
+const privateKey = fs.readFileSync(
+  "/etc/letsencrypt/live/api.theodorhillmann.de/privkey.pem",
+  "utf8"
+);
+const certificate = fs.readFileSync(
+  "/etc/letsencrypt/live/api.theodorhillmann.de/cert.pem",
+  "utf8"
+);
+const ca = fs.readFileSync(
+  "/etc/letsencrypt/live/api.theodorhillmann.de/fullchain.pem",
+  "utf8"
+);
+
+const credentials = {
+  key: privateKey,
+  cert: certificate,
+  ca: ca,
+};
+
 app.use(express.json()); // middleware to parse JSON body
 
 const corsOpts = {
@@ -21,7 +44,7 @@ const corsOpts = {
 };
 app.use(cors(corsOpts));
 
-const routerBasePath = "/.netlify/functions/server";
+const routerBasePath = "/";
 
 router.get("/create-image", async (req, res) => {
   console.log("create-image request", req.body);
@@ -84,6 +107,18 @@ router.get("/", (req, res) => {
 });
 
 app.use(routerBasePath, router);
+
+// Starting both http & https servers
+const httpServer = http.createServer(app);
+const httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(80, () => {
+  console.log("HTTP Server running on port 80");
+});
+
+httpsServer.listen(443, () => {
+  console.log("HTTPS Server running on port 443");
+});
 
 module.exports = {
   handler: serverless(app),

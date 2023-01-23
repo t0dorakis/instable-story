@@ -2,6 +2,8 @@
 
 Created by Theodor Hillmann during an one day hackathon with Benjamin Bartosch
 
+Runs on a Digital Ocean Droplet as Netlify Functions have a too strict timeout for Language Models...
+
 TODO:
 - Moderation: https://beta.openai.com/docs/guides/moderation/moderation
 

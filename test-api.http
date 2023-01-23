@@ -1,0 +1,65 @@
+# run with CMD + Option + R
+
+###
+
+GET http://localhost:3000/create-image
+content-type: application/json
+
+{
+    "prompt": "A cute cat eating pizza",
+    "pixel": 256,
+    "number": 1
+}
+
+###
+
+GET http://localhost:3000/complete-text
+content-type: application/json
+
+{
+    "prompt": "A story about a fish learing to walk"
+}
+
+###
+
+POST http://localhost:3000/create-story-board
+content-type: application/json
+
+{
+    "prompt": "Write a screenplay about a sowjet city in the 70s which get invaded by dinosaurs.",
+    "mock": false
+}
+
+###
+
+POST http://localhost:3000/story-board-script
+content-type: application/json
+
+{
+    "prompt": "Write a screenplay about a sowjet city in the 70s which get invaded by dinosaurs.",
+    "mock": false
+}
+
+###
+
+POST http://localhost:3000/generate-scene-image
+content-type: application/json
+
+{
+    "scene": "Write a screenplay about a sowjet city in the 70s which get invaded by dinosaurs.",
+    "mood": "gritty, grainy, 50s, kodak",
+    "mock": false
+}
+
+
+
+### Digital Ocean droplet
+
+GET http://api.theodorhillmann.de:3000/.netlify/functions/server/create-image
+content-type: application/json
+
+{
+    "prompt": "A cute cat eating pizza",
+    "pixel": 256,
+    "number": 1
+}

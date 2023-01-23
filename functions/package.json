@@ -1,0 +1,17 @@
+{
+  "name": "storyboard-functions",
+  "version": "0.0.1",
+  "description": "Create scene arrays with pictures",
+  "main": "server.js",
+  "author": "Theodor Hillmann, Benjamin Bartosch",
+  "license": "None",
+  "private": true,
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonrepair": "^3.0.2",
+    "openai": "^3.1.0",
+    "serverless-http": "^3.1.1"
+  }
+}

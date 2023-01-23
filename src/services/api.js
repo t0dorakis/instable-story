@@ -1,6 +1,6 @@
 import React from "react";
 
-const url = "http://localhost:3000";
+const url = "http://api.theodorhillmann.de:3000/.netlify/functions/server";
 
 const Api = {
   // TODO: add token for better security

@@ -10,7 +10,7 @@
 
 import React from 'react';
 // import { Helmet } from 'react-helmet';
-import { GlobalStyles } from './src/styles/GlobalStyles';
+import { GlobalStyles } from './src/styles/globalStyles';
 
 export const wrapRootElement = ({ element }) => <>{element}</>;
 

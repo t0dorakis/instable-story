@@ -242,6 +242,8 @@ const IndexPage = () => {
                   value={inputValue !== initialInput ? inputValue : ""}
                   onChange={(e) => setInputValue(e.target.value)}
                   placeholder={initialInput}
+                  onFocus={(e) => (e.target.placeholder = "")}
+                  onBlur={(e) => (e.target.placeholder = initialInput)}
                 />
               </NoteWrapper>
             </Label>

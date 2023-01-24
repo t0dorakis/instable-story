@@ -8,20 +8,11 @@ const StyledInput = styled.input`
   font-size: 15px;
   border: 1px solid black;
   padding: 10px 16px;
-  ${({ loading }) => loading && "opacity: 0.8; border: 1px solid grey;"}
+  ${({ loading }) =>
+    loading &&
+    `color: #989898; 
+  border: 1px solid #989898;`}
   cursor: pointer;
-  margin-top: 20px;
-`;
-
-const StyledLink = styled(Link)`
-  border-radius: 2px;
-  font-family: inherit;
-  font-size: 15px;
-  border: 1px solid black;
-  padding: 10px 16px;
-  ${({ loading }) => loading && "opacity: 0.8; border: 1px solid grey;"}
-  cursor: pointer;
-  text-decoration: none;
   margin-top: 20px;
 `;
 
@@ -31,20 +22,14 @@ const StyledButton = styled.button`
   font-size: 15px;
   border: 1px solid black;
   padding: 10px 16px;
-  ${({ loading }) => loading && "opacity: 0.8; border: 1px solid grey;"}
+  ${({ loading }) =>
+    loading &&
+    `color: #989898; 
+  border: 1px solid #989898;`}
   cursor: pointer;
   text-decoration: none;
   margin-top: 20px;
 `;
-// const StyledButton = styled.button`
-//   border-radius: 2px;
-//   font-family: inherit;
-//   font-size: 15px;
-//   border: 1px solid black;
-//   padding: 10px 16px;
-//   ${({ loading }) => loading && "opacity: 0.8;"}
-//   cursor: pointer;
-// `;
 
 const SubmitButton = ({ loading, children }) => {
   return (

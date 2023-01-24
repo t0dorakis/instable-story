@@ -154,14 +154,14 @@ const Label = styled.label`
 
 const H1 = styled.h1`
   font-size: 30px;
-  font-weight: normal;
-  margin-bottom: 50px;
+  font-weight: 600;
+  margin-bottom: 40px;
   line-height: 120%;
 `;
 
 const IndexPage = () => {
   const initialInput =
-    "A family trying to survive the great famine of the 20s.";
+    "The movie follows an eccentric scientist, who develops a teleportation device but suffers a terrible accident when an ordinary housefly enters the transmission booth with him, merging them. The scientist slowly transforms into a grotesque, fly-like creature.";
   const [script, setScript] = useState(null);
   const [loading, setLoading] = useState(false);
   const [inputValue, setInputValue] = useState(initialInput);
@@ -189,15 +189,16 @@ const IndexPage = () => {
     toast(
       ({ closeToast }) => (
         <>
-          This is a pure fun project. If you like it, please <br />
+          If you enjoy using this website, please consider {` `}
           <a
             target="_blank"
             href="https://paypal.me/theodorhillmann?country.x=DE&locale.x=de_DE"
           >
-            Buy me a coffee
+            buying me a coffee
           </a>
-          <br />
-          to keep this alive :D
+          {` `}
+          to help cover server costs and continue to improve the experience for
+          everyone.
         </>
       ),
       {
@@ -215,7 +216,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <H1>{script ? script[0]?.title : "Create Your Story Board"}</H1>
+      <H1>{script ? script[0]?.title : "Instable Story"}</H1>
       <StyledToastContainer />
       <SceneWrapper>
         {script ? (
@@ -232,6 +233,7 @@ const IndexPage = () => {
           <form onSubmit={handleSubmit}>
             <Label>
               Write a screenplay about...
+              <br /> <br />
               <NoteWrapper>
                 <Note
                   // type="text-area"

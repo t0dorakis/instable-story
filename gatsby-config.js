@@ -3,8 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `frontend`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Instable Story`,
+    author: `Theodor Hillmann`,
+    siteUrl: `https://instable-story.theodorhillmann.de`,
+    description: `Instable Story is a screenplay generator that uses AI to create a story for you.`,
   },
   plugins: ["gatsby-plugin-styled-components"]
 };

@@ -2382,9 +2382,9 @@ acorn@^7.4.0:
   integrity sha512-nQyp0o1/mNdbTO1PO6kHkwSrmgZ0MT/jCCpNiwbUjGoRN4dlBhqJtoQuCnEOKzgTVwg0ZWiCoQy6SxMebQVh8A==
 
 acorn@^8.5.0, acorn@^8.7.1:
-  version "8.8.1"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.1.tgz#0a3f9cbecc4ec3bea6f0a80b66ae8dd2da250b73"
-  integrity sha512-7zFpHzhnqYKrkYdUjF1HI1bzd0VygEGX8lFk4k5zVMqHEoES+P+7TKI+EvLO9WVMJ8eekdO0aDEK044xTXwPPA==
+  version "8.8.2"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-8.8.2.tgz#1b2f25db02af965399b9776b0c2c391276d37c4a"
+  integrity sha512-xjIYgE8HBrkpd/sJqOGNspf8uHG+NOHGOw6a/Urj8taM2EXfdNAH2oFcPeIFfsv3+kz/mJrS5VuMqbNLjCa2vw==
 
 address@1.1.2:
   version "1.1.2"
@@ -2638,9 +2638,9 @@ available-typed-arrays@^1.0.5:
   integrity sha512-DMD0KiN46eipeziST1LPP/STfDU0sufISXmjSgvVsoU2tqxctQeASejWcfNtxYKqETM1UxQ8sp2OrSBWpHY6sw==
 
 axe-core@^4.6.2:
-  version "4.6.2"
-  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.6.2.tgz#6e566ab2a3d29e415f5115bc0fd2597a5eb3e5e3"
-  integrity sha512-b1WlTV8+XKLj9gZy2DZXgQiyDp9xkkoe2a6U6UbYccScq2wgH/YwCeI2/Jq2mgo0HzQxqJOjWZBLeA/mqsk5Mg==
+  version "4.6.3"
+  resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.6.3.tgz#fc0db6fdb65cc7a80ccf85286d91d64ababa3ece"
+  integrity sha512-/BQzOX780JhsxDnPpH4ZiyrJAzcd8AfzFPkv+89veFSr1rcMjuq2JDCwypKaPeB6ljHp9KjXhPpjgCvQlWYuqg==
 
 axios@^0.21.1:
   version "0.21.4"
@@ -3074,9 +3074,9 @@ caniuse-api@^3.0.0:
     lodash.uniq "^4.5.0"
 
 caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001400, caniuse-lite@^1.0.30001426:
-  version "1.0.30001446"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001446.tgz#6d4ba828ab19f49f9bcd14a8430d30feebf1e0c5"
-  integrity sha512-fEoga4PrImGcwUUGEol/PoFCSBnSkA9drgdkxXkJLsUBOnJ8rs3zDv6ApqYXGQFOyMPsjh79naWhF4DAxbF8rw==
+  version "1.0.30001447"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001447.tgz#ef1f39ae38d839d7176713735a8e467a0a2523bd"
+  integrity sha512-bdKU1BQDPeEXe9A39xJnGtY0uRq/z5osrnXUw0TcK+EYno45Y+U7QU9HhHEyzvMDffpYadFXi3idnSNkcwLkTw==
 
 capital-case@^1.0.4:
   version "1.0.4"
@@ -3976,11 +3976,6 @@ dotenv-expand@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/dotenv-expand/-/dotenv-expand-5.1.0.tgz#3fbaf020bfd794884072ea26b1e9791d45a629f0"
   integrity sha512-YXQl1DSa4/PQyRfgrv6aoNjhasp/p4qs9FjJ4q4cQk+8m4r6k4ZSiEyytKG8f8W9gi8WsQtIObNmKd+tMzNTmA==
-
-dotenv@^16.0.3:
-  version "16.0.3"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
-  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
 
 dotenv@^7.0.0:
   version "7.0.0"
@@ -5076,7 +5071,7 @@ gatsby-plugin-page-creator@^4.24.0:
     globby "^11.1.0"
     lodash "^4.17.21"
 
-gatsby-plugin-styled-components@5.25.0:
+gatsby-plugin-styled-components@^5:
   version "5.25.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-styled-components/-/gatsby-plugin-styled-components-5.25.0.tgz#e0bac90712986400376a65c6e72678bc12dff8fe"
   integrity sha512-gBCgvLDz+X9Xq8BhroFWZTtURMycgARyly4SlidrPqcPtxWhJtas+gc01/uivHnjIUW6SAac8cpot3ld/PLdZA==
@@ -6831,9 +6826,9 @@ msgpackr-extract@^2.2.0:
     "@msgpackr-extract/msgpackr-extract-win32-x64" "2.2.0"
 
 msgpackr@^1.5.4:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/msgpackr/-/msgpackr-1.8.1.tgz#2298aed8a14f83e99df77d344cbda3e436f29b5b"
-  integrity sha512-05fT4J8ZqjYlR4QcRDIhLCYKUOHXk7C/xa62GzMKj74l3up9k2QZ3LgFc6qWdsPHl91QA2WLWqWc8b8t7GLNNw==
+  version "1.8.2"
+  resolved "https://registry.yarnpkg.com/msgpackr/-/msgpackr-1.8.2.tgz#e40615cc384f5b92322e0a9da1ae98c45ccc51c4"
+  integrity sha512-eLuPeok0DMwsGN23AvuVg32mYpx55tsQnxI87d8V1yZsdT8U5jrWhmCa1INO/joGAFQFfo/eTlM/BxVwLKbBOQ==
   optionalDependencies:
     msgpackr-extract "^2.2.0"
 
@@ -8376,11 +8371,6 @@ serve-static@1.15.0:
     escape-html "~1.0.3"
     parseurl "~1.3.3"
     send "0.18.0"
-
-serverless-http@^3.1.1:
-  version "3.1.1"
-  resolved "https://registry.yarnpkg.com/serverless-http/-/serverless-http-3.1.1.tgz#086509bad0ed29babf3d189e839a228fa0aabad3"
-  integrity sha512-apCJb/xsB/E2IVT23bG9lBGoPv7kTgwhi6b/Reshc181vJv7Df4hCOj0WNQQRpPoKMEZAuGBEzhdIHUaL3pCLQ==
 
 set-blocking@^2.0.0:
   version "2.0.0"

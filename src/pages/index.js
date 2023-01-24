@@ -136,6 +136,7 @@ const Note = styled.textarea`
   min-height: 450px;
   font-size: 15px;
   line-height: 22px;
+  font-family: inherit;
   border: none;
   background: repeating-linear-gradient(white, white 21px, #9198e5 22px);
   &::placeholder {
@@ -238,8 +239,9 @@ const IndexPage = () => {
                 <Note
                   // type="text-area"
                   name="prompt"
-                  value={inputValue}
+                  value={inputValue !== initialInput ? inputValue : ""}
                   onChange={(e) => setInputValue(e.target.value)}
+                  placeholder={initialInput}
                 />
               </NoteWrapper>
             </Label>
